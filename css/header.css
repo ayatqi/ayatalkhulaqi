@@ -1,0 +1,89 @@
+.header {
+    width: 100%;
+    min-height: 72px;
+    
+    background-color: #1d278c;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 64px;
+
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+/* LOGO */
+
+.header__logo a {
+    font-family: "Super Pixel", sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+/* NAVIGATION */
+
+.header__nav ul {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+
+    list-style: none;
+}
+
+.header__nav a {
+    font-family: "Gome Pixel", sans-serif;
+    font-size: 20px;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    transition: opacity 0.2s ease;
+}
+
+.header__nav a:hover {
+    opacity: 0.75;
+}
+
+/* BUTTON */
+
+.talk-btn {
+    width: 140px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    background-image: url("../assets/header-btn.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+
+    transition: transform 0.15s ease;
+}
+
+.talk-btn span {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+
+    color: #4a4a4a;
+
+    transform: translateY(-1px);
+}
+
+.talk-btn:hover {
+    transform: translateY(-2px);
+}
+
+.talk-btn:active {
+    transform: translateY(1px);
+}

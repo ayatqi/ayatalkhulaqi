@@ -1,0 +1,26 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* FONT IMPORTS */
+
+@font-face {
+    font-family: "Super Pixel";
+    src: url("../fonts/SuperPixel-m2L8j.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gome Pixel";
+    src: url("../fonts/GomePixel-ARJd7.otf") format("opentype");
+    font-display: swap;
+}
