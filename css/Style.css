@@ -9,6 +9,13 @@ html,
 body {
     width: 100%;
     overflow-x: hidden;
+    cursor: url("../assets/cursors/pixel.cur"), auto;
+}
+a,
+button,
+.talk-btn,
+.system-message__close img{
+    cursor: url("../assets/cursors/pointer.cur"), pointer;
 }
 
 /* FONT IMPORTS */

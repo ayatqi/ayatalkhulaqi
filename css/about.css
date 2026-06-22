@@ -1,12 +1,34 @@
 .about {
+    position: relative;
+
     min-height: calc(100vh - var(--header-height));
 
-    background: #F0F0F0;
+    background-color: #F0F0F0;
 
-    padding: 100px;
+    padding: 64px;
 
     display: flex;
     align-items: center;
+
+    overflow: hidden;
+}
+
+.about::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background-image: url("../assets/ml.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    opacity: 0.15;
+
+    pointer-events: none;
+
+    z-index: 0;
 }
 
 .about__content {
@@ -16,7 +38,7 @@
     justify-content: space-between;
     align-items: center;
 
-    gap: 80px;
+    padding: 40px;
 }
 
 /* LEFT SIDE */
@@ -41,7 +63,7 @@
 
     line-height: 1.5;
 
-    margin-bottom: 56px;
+    margin-bottom: 26px;
 }
 
 /* SYSTEM MESSAGE */

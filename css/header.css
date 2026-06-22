@@ -1,7 +1,7 @@
 .header {
     width: 100%;
     min-height: 72px;
-    
+
     background-color: #1d278c;
 
     display: flex;
@@ -12,7 +12,10 @@
 
     position: fixed;
     top: 0;
+    left: 0;
     z-index: 1000;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
 }
 
 /* LOGO */
