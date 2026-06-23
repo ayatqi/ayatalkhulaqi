@@ -1,0 +1,315 @@
+.experience {
+    position: relative;
+    height: 700px;
+    padding: 80px 64px;
+    background-color: #F0F0F0;
+    overflow: hidden;
+}
+
+.experience::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: url("../assets/img/ml-map1.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 50%;
+
+    opacity: 0.1;
+
+    pointer-events: none;
+    z-index: 0;
+}
+
+.experience__content {
+    position: relative;
+    z-index: 1;
+
+    min-height: 950px;
+}
+
+.experience__title {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 72px;
+    margin-bottom: 10px;
+}
+
+/* ======================
+   EXPERIENCE WINDOW
+====================== */
+
+.experience-window {
+    position: relative;
+    width: 950px;
+    right: 80px;
+}
+
+.experience-window .window-bg {
+    width: 80%;
+    display: block;
+}
+
+.window-content {
+    position: absolute;
+    top: 85px;
+    left: 75px;
+    right: 45px;
+    bottom: 45px;
+
+    width: 550px;
+
+    overflow-y: auto;
+}
+
+/* ======================
+   JOBS
+====================== */
+
+.job {
+    margin-bottom: 32px;
+}
+
+.job__header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.job__title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.job__icon {
+    width: 40px;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    image-rendering: pixelated;
+}
+
+
+.job__date {
+    font-size: 14px;
+    color: #555;
+}
+
+.job__company {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 16px;
+
+    color: #18379d;
+
+    margin-left: 56px;
+}
+
+.job__details {
+    margin-left: 48px;
+    padding-left: 16px;
+}
+
+.job__details li {
+    font-size: 15px;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+/* ======================
+   SKILLS WINDOW
+====================== */
+
+.skills-window {
+    position: absolute;
+
+    top: 0;
+    left: 1120px;
+
+    width: 350px;
+}
+
+.skills-window .window-bg {
+    width: 90%;
+    display: block;
+}
+
+.skills-content {
+    position: absolute;
+
+    top: 65px;
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+}
+
+/* Skills Header */
+
+.skills-header {
+    display: flex;
+    align-items: center;
+}
+
+.skills-header__icon {
+    width: 62px;
+    height: 62px;
+
+}
+
+.skills-header h3 {
+    font-family: "Gome Pixel", sans-serif;
+    font-size: 30px;
+}
+
+/* Skills List */
+
+.skills-list {
+    margin-left: 20px;
+}
+
+.skills-list li {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+/* Languages */
+
+.languages-header {
+    display: flex;
+    align-items: center;
+
+    margin-top: 10px;
+}
+
+.languages-header__icon {
+    width: 62px;
+    height: 62px;
+    flex-shrink: 0;
+}
+
+.languages-header h3 {
+    font-family: "Gome Pixel", sans-serif;
+    font-size: 30px;
+}
+
+.languages-list {
+    margin-left: 20px;
+}
+
+.languages-list li {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+
+/* ======================
+   EDUCATION
+====================== */
+
+.education-window {
+    position: absolute;
+
+    top: 20px;
+    left: 640px;
+    width: 500px;
+}
+
+.education-window .window-bg {
+    width: 100%;
+    display: block;
+}
+
+.education-content {
+    position: absolute;
+    top: 70px;
+    left: 5px;
+    right: 25px;
+    bottom: 25px;
+
+    overflow-y: auto;
+}
+
+.education-item {
+    display: flex;
+    align-items: flex-start;
+
+    margin-bottom: 12px;
+}
+
+.education-icon {
+    width: 35px;
+    height: 35px;
+    margin-top: -5px;
+}
+
+
+.education-info {
+    flex: 1;
+}
+
+.education-school {
+    margin: 0 0 6px;
+
+    color: #18379d;
+
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.education-degree {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+.education-cgpa {
+    margin-top: 4px;
+
+    font-size: 15px;
+}
+
+/* ======================
+   RESUME
+====================== */
+#resumeMessage {
+    position: absolute;
+
+    top: 350px;
+    left: 640px;
+
+    width: 460px;
+}
+
+#closeBtn {
+
+    top: 10px;
+}
+
+
+.resume-icon {
+    width: 80px !important;
+    height: 80px !important;
+}
+
+.job__icon:hover,
+.skills-header__icon:hover,
+.languages-header__icon:hover,
+.education-icon:hover {
+    animation: bounce 0.5s ease;
+}
+
+@keyframes bounce {
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(-8px);
+    }
+
+    60% {
+        transform: translateY(-3px);
+    }
+}
+

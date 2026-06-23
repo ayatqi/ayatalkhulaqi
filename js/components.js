@@ -1,23 +1,34 @@
-async function loadComponent(containerId, filePath) {
-    const response = await fetch(filePath);
+async function loadComponent(
+    containerId,
+    filePath
+) {
+
+    const response =
+        await fetch(filePath);
 
     if (!response.ok) return;
 
-    const html = await response.text();
+    const html =
+        await response.text();
 
-    document.getElementById(containerId).innerHTML = html;
+    document
+        .getElementById(containerId)
+        .innerHTML = html;
 
-    if (containerId === "about-container") {
-        initializeAbout();
-    }
+    initializeSystemMessages();
 }
 
 loadComponent(
     "header-container",
-    "./components/Header.html"
+    "components/Header.html"
 );
 
 loadComponent(
     "about-container",
-    "./components/About.html"
+    "components/About.html"
+);
+
+loadComponent(
+    "experience-container",
+    "components/Experience.html"
 );

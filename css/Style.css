@@ -14,6 +14,9 @@ body {
 a,
 button,
 .talk-btn,
+.job__icon,
+.languages-header__icon,
+.skills-header__icon,
 .system-message__close img{
     cursor: url("../assets/cursors/pointer.cur"), pointer;
 }

@@ -1,26 +1,46 @@
-function initializeAbout() {
-    const systemMessage = document.getElementById("systemMessage");
-    const closeMessageBtn = document.getElementById("closeMessageBtn");
-    const sound = document.getElementById("windows95Sound");
+function initializeSystemMessages() {
 
-    if (!systemMessage || !closeMessageBtn || !sound) return;
+    const messages =
+        document.querySelectorAll(".system-message");
 
-    closeMessageBtn.addEventListener("click", (event) => {
-        event.preventDefault();
-        event.stopPropagation();
+    const sound =
+        document.getElementById("windows95Sound");
 
-        // Play sound immediately
-        sound.currentTime = 0;
-        sound.play().catch((error) => {
-            console.log("Audio playback failed:", error);
-        });
+    messages.forEach((message) => {
 
-        // Hide message
-        systemMessage.classList.add("hidden");
+        const closeButton =
+            message.querySelector(
+                ".system-message__close"
+            );
 
-        // Show message again after 2 seconds
-        setTimeout(() => {
-            systemMessage.classList.remove("hidden");
-        }, 200);
+        if (!closeButton) return;
+
+        closeButton.addEventListener(
+            "click",
+            (event) => {
+
+                event.preventDefault();
+                event.stopPropagation();
+
+                if (sound) {
+
+                    sound.currentTime = 0;
+
+                    sound.play().catch(() => {});
+                }
+
+                message.classList.add(
+                    "hidden"
+                );
+
+                setTimeout(() => {
+
+                    message.classList.remove(
+                        "hidden"
+                    );
+
+                }, 500);
+            }
+        );
     });
 }
