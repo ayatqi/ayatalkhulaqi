@@ -32,3 +32,8 @@ loadComponent(
     "experience-container",
     "components/Experience.html"
 );
+
+loadComponent(
+    "certifications-container",
+    "components/Certifications.html"
+);
