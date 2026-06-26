@@ -1,0 +1,229 @@
+/* ==========================================
+   CERTIFICATIONS
+========================================== */
+
+.cretifications {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 50px 60px;
+}
+
+/* ==========================================
+   BACKGROUND
+========================================== */
+
+.certificates__background {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: -2;
+}
+
+/* ==========================================
+   DESKTOP ICONS
+========================================== */
+
+.desktop-icons {
+    position: absolute;
+
+    top: 80px;
+    left: 35px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    z-index: 5;
+}
+
+.desktop-icon {
+    width: 90px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-decoration: none;
+
+    color: white;
+}
+
+.desktop-icon img {
+    width: 105px;
+    height: 105px;
+
+    image-rendering: pixelated;
+
+    transition: transform .25s ease;
+}
+
+.desktop-icon span {
+    margin-top: 6px;
+
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 13px;
+
+    text-align: center;
+
+    color: white;
+
+    text-shadow: 2px 2px black;
+}
+
+.desktop-icon:hover img,
+.desktop-icon:hover span {
+    animation: bounce .5s ease;
+}
+
+/* ==========================================
+   SLIDER
+========================================== */
+
+.certificates-slider {
+    overflow: hidden;
+    width: 100%;
+}
+
+.certificates-track {
+    display: flex;
+    gap: 30px;
+    width: max-content;
+    will-change: transform;
+}
+/* ==========================================
+   CARD
+========================================== */
+
+.certificate-card {
+    position: relative;
+
+    flex: 0 0 570px;
+    top: 200px;
+}
+
+.certificate-window {
+    width: 100%;
+    display: block;
+
+    user-select: none;
+    pointer-events: none;
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.certificate-content {
+    position: absolute;
+
+    top: 78px;
+    left: 42px;
+    right: 42px;
+    bottom: 28px;
+}
+
+/* Title */
+
+.certificate-title {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+
+    margin-bottom: 26px;
+
+    color: black;
+}
+
+/* Certificate Preview */
+
+.certificate-preview {
+    position: absolute;
+
+    left: 0;
+    top: 60px;
+
+    width: 435px;
+    height: 365px;
+
+    object-fit: contain;
+
+    background: white;
+
+    border: none;
+}
+
+/* Links */
+
+.certificate-links {
+    position: absolute;
+
+    right: 35px;
+    top: 175px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.certificate-links a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 270px;
+
+    text-decoration: none;
+
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 16px;
+
+    color: black;
+}
+
+.certificate-links img {
+    width: 46px;
+    height: 46px;
+
+    image-rendering: pixelated;
+}
+
+.certificate-links span {
+    transition: .2s;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width:1400px){
+
+    .certificate-card{
+
+        flex:0 0 340px;
+
+    }
+
+}
+
+@media (max-width:1200px){
+
+    .desktop-icons{
+
+        display:none;
+
+    }
+
+    .certificates-slider{
+
+        left:40px;
+
+    }
+
+}

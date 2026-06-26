@@ -16,6 +16,21 @@ async function loadComponent(
         .innerHTML = html;
 
     initializeSystemMessages();
+
+    if (
+        containerId === "about-container" &&
+        typeof initializeAbout === "function"
+    ) {
+        initializeAbout();
+    }
+
+    if (
+        containerId === "cretifications-container" &&
+        typeof initializeCertificates === "function"
+    ) {
+        initializeCertificates();
+    }
+
 }
 
 loadComponent(
@@ -34,6 +49,6 @@ loadComponent(
 );
 
 loadComponent(
-    "certifications-container",
+    "cretifications-container",
     "components/Certifications.html"
 );

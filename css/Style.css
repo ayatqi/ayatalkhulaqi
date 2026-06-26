@@ -34,3 +34,29 @@ button,
     src: url("../fonts/GomePixel-ARJd7.otf") format("opentype");
     font-display: swap;
 }
+
+
+.job__icon:hover,
+.skills-header__icon:hover,
+.languages-header__icon:hover,
+.education-icon:hover,
+.certificate-links a:hover img,
+.certificate-links a:hover span {
+    animation: bounce 0.5s ease;
+}
+
+@keyframes bounce {
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(-8px);
+    }
+
+    60% {
+        transform: translateY(-3px);
+    }
+}
+
+
