@@ -29,57 +29,116 @@
    DESKTOP ICONS
 ========================================== */
 
-.desktop-icons {
-    position: absolute;
-
-    top: 60px;
-    left: 20px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-
-    z-index: 1;     /* was 5 */
+.desktop-icons{
+    position:absolute;
+    inset:0;
+    z-index:1;
 }
 
-.desktop-icon {
-    width: 90px;
+/* Every icon */
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.desktop-icon{
 
-    text-decoration: none;
+    position:absolute;
 
-    color: white;
+    width:95px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    text-decoration:none;
+    color:white;
 }
 
-.desktop-icon img {
-    width: 105px;
-    height: 105px;
+.desktop-icon img{
 
-    image-rendering: pixelated;
+    width:72px;
+    height:72px;
 
-    transition: transform .25s ease;
+    image-rendering:pixelated;
 }
 
-.desktop-icon span {
-    margin-top: 6px;
+.desktop-icon span{
+    font-family:"Pixelify Sans",sans-serif;
+    font-size:14px;
 
-    font-family: "Pixelify Sans", sans-serif;
-    font-size: 13px;
+    text-align:center;
 
-    text-align: center;
-
-    color: white;
-
-    text-shadow: 2px 2px black;
+    color:white;
+    text-shadow:2px 2px black;
 }
 
 .desktop-icon:hover img,
-.desktop-icon:hover span {
-    animation: bounce .5s ease;
+.desktop-icon:hover span{
+
+    animation:bounce .5s ease;
 }
+
+/* ==========================================
+   WINDOWS XP POSITIONS
+========================================== */
+
+/* Left First col */
+
+.icon-documents{
+
+    top:60px;
+    left:35px;
+}
+
+.icon-computer{
+
+    top:160px;
+    left:35px;
+}
+
+.icon-chrome{
+
+    top:260px;
+    left:35px;
+}
+
+/* Left Second col */
+.icon-recycle{
+
+    top:60px;
+    left:135px;
+}
+
+.icon-ie{
+
+    top:160px;
+    left:135px;
+}
+.icon-firefox{
+
+    top:260px;
+    left:135px;
+}
+
+
+/* Right First col */
+.icon-projects{
+
+    top:60px;
+    right:35px;
+}
+
+.icon-pictures{
+
+    top:160px;
+    right:35px;
+}
+
+/* Right Second col */
+.icon-cv{
+
+    top:60px;
+    right:135px;
+}
+
+
 
 /* ==========================================
    SLIDER

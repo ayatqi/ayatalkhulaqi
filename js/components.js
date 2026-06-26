@@ -36,7 +36,28 @@ async function loadComponent(
 loadComponent(
     "header-container",
     "components/Header.html"
-);
+).then(() => {
+
+    const certificatesBtn =
+        document.getElementById("certificates-nav");
+
+    if (certificatesBtn) {
+
+        certificatesBtn.addEventListener("click", () => {
+
+            setTimeout(() => {
+
+                if (window.restartCertificatesSlider) {
+                    window.restartCertificatesSlider();
+                }
+
+            }, 100);
+
+        });
+
+    }
+
+});
 
 loadComponent(
     "about-container",

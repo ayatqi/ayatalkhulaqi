@@ -5,55 +5,64 @@
 const certificates = [
 
     {
-        title: "IBM Tools For Data Science",
-        image: "assets/certificates/IBM_Tools_For_Data_Science.jpeg",
+        title: "SAP Certified - SAP Generative AI Developer",
+        image: "assets/certificates/SAP_Certified_Generative_AI_Developer.png",
 
-        // Add Certificate URL
-        link: "#",
-
-        // Add View URL
-        view: "#"
-    },
-
-    {
-        title: "IBM What is Data Science",
-        image: "assets/certificates/IBM_What_is_Data_Science.jpeg",
-
-        link: "#",
-        view: "#"
-    },
-
-    {
-        title: "Microsoft Preparing Data for Analysis with Microsoft Excel",
-        image: "assets/certificates/Microsoft_Preparing_Data_for_Analysis_with_Microsoft_Excel_Certificate.jpeg",
-
-        link: "#",
-        view: "#"
-    },
-
-    {
-        title: "Microsoft Extract Transform and Load Data in Power BI",
-        image: "assets/certificates/Microsoft_Extract_Transform_and_Load_Data_in_Power_BI.png",
-
-        link: "#",
-        view: "#"
+        link: "https://www.credly.com/badges/35c088f6-37c2-425e-90c4-809f6d3f23c1/public_url",
+        view: "../assets/docs/SAP_Certified_Generative_AI_Developer.pdf"
     },
 
     {
         title: "Microsoft Data Modeling in Power BI",
         image: "assets/certificates/Microsoft_Data_Modeling_in_Power_BI_Certificate.png",
 
-        link: "#",
-        view: "#"
+        link: "https://www.coursera.org/account/accomplishments/verify/G3SQMQU2EQFK",
+        view: "https://www.coursera.org/account/accomplishments/certificate/G3SQMQU2EQFK"
+    },
+
+    {
+        title: "Microsoft Extract Transform and Load Data in Power BI",
+        image: "assets/certificates/Microsoft_Extract_Transform_and_Load_Data_in_Power_BI.png",
+
+        link: "https://www.coursera.org/account/accomplishments/verify/PWZZ2MQ8D5KH",
+        view: "https://www.coursera.org/account/accomplishments/certificate/PWZZ2MQ8D5KH"
     },
 
     {
         title: "Microsoft Harnessing the Power of Data with Power BI",
         image: "assets/certificates/Microsoft_Harnessing_the_Power_of_Data_with_Power_BI.png",
 
-        link: "#",
-        view: "#"
+        link: "https://www.coursera.org/account/accomplishments/verify/0BNUYLEVXG1Q",
+        view: "https://www.coursera.org/account/accomplishments/certificate/0BNUYLEVXG1Q"
+    },
+
+    {
+        title: "Microsoft Preparing Data for Analysis with Microsoft Excel",
+        image: "assets/certificates/Microsoft_Preparing_Data_for_Analysis_with_Microsoft_Excel_Certificate.jpeg",
+
+        link: "https://www.coursera.org/account/accomplishments/verify/4YE8ZZB16H49",
+        view: "https://www.coursera.org/account/accomplishments/certificate/4YE8ZZB16H49"
+    },
+
+    {
+        title: "IBM Tools For Data Science",
+        image: "assets/certificates/IBM_Tools_For_Data_Science.jpeg",
+
+        // Add Certificate URL
+        link: "https://www.coursera.org/account/accomplishments/verify/9CJBPXYEHQLN",
+
+        // Add View URL
+        view: "https://www.coursera.org/account/accomplishments/certificate/9CJBPXYEHQLN"
+    },
+
+    {
+        title: "IBM What is Data Science",
+        image: "assets/certificates/IBM_What_is_Data_Science.jpeg",
+
+        link: "https://www.coursera.org/account/accomplishments/verify/B9PRDWPYCKY6",
+        view: "https://www.coursera.org/account/accomplishments/certificate/B9PRDWPYCKY6"
     }
+
 
 ];
 
@@ -150,14 +159,21 @@ function initializeCertificates() {
 }
 
 // =========================================
-// AUTO SLIDER
+// SLIDER VARIABLES
+// =========================================
+
+let animationId = null;
+let position = 0;
+
+// =========================================
+// START SLIDER
 // =========================================
 
 function startSlider() {
 
     const track = document.querySelector(".certificates-track");
 
-    let position = 0;
+    if (!track) return;
 
     const card = document.querySelector(".certificate-card");
 
@@ -168,6 +184,8 @@ function startSlider() {
     const cardWidth = card.offsetWidth + gap;
 
     const totalWidth = cardWidth * certificates.length;
+
+    cancelAnimationFrame(animationId);
 
     function animate() {
 
@@ -181,7 +199,7 @@ function startSlider() {
 
         track.style.transform = `translateX(-${position}px)`;
 
-        requestAnimationFrame(animate);
+        animationId = requestAnimationFrame(animate);
 
     }
 
@@ -190,7 +208,25 @@ function startSlider() {
 }
 
 // =========================================
-// START
+// RESTART SLIDER
 // =========================================
 
-initializeCertificates();
+function restartCertificatesSlider() {
+
+    position = 0;
+
+    const track = document.querySelector(".certificates-track");
+
+    if (track) {
+
+        track.style.transform = "translateX(0px)";
+
+    }
+
+    startSlider();
+
+}
+
+// Make available globally
+window.restartCertificatesSlider = restartCertificatesSlider;
+
