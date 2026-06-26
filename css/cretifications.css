@@ -32,14 +32,14 @@
 .desktop-icons {
     position: absolute;
 
-    top: 80px;
-    left: 35px;
+    top: 60px;
+    left: 20px;
 
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 18px;
 
-    z-index: 5;
+    z-index: 1;     /* was 5 */
 }
 
 .desktop-icon {
@@ -85,11 +85,17 @@
    SLIDER
 ========================================== */
 
-.certificates-slider {
-    overflow: hidden;
-    width: 100%;
-}
+.certificates-slider{
+    position:absolute;
 
+    top:200px;
+    left:110px;
+    right:0;
+
+    overflow:hidden;
+
+    z-index:10;
+}
 .certificates-track {
     display: flex;
     gap: 30px;
@@ -100,103 +106,97 @@
    CARD
 ========================================== */
 
-.certificate-card {
-    position: relative;
+.certificate-card{
+    position:relative;
+    flex:0 0 720px;
 
-    flex: 0 0 570px;
-    top: 200px;
+    height:auto;
 }
 
-.certificate-window {
-    width: 100%;
-    display: block;
-
-    user-select: none;
-    pointer-events: none;
+.certificate-window{
+    width:720px;
+    display:block;
 }
 
 /* ==========================================
    CONTENT
 ========================================== */
 
-.certificate-content {
-    position: absolute;
+.certificate-content{
+    position:absolute;
 
-    top: 78px;
-    left: 42px;
-    right: 42px;
-    bottom: 28px;
+    top:55px;
+    left:30px;
+    right:28px;
+    bottom:25px;
 }
 
 /* Title */
 
-.certificate-title {
-    font-family: "Pixelify Sans", sans-serif;
-    font-size: 25px;
-    font-weight: 500;
+.certificate-title{
+    position:absolute;
 
-    margin-bottom: 26px;
+    top:15px;
+    left:18px;
+    right:18px;
 
-    color: black;
+    font-family:"Pixelify Sans";
+    font-size:25px;
+    line-height:1.2;
 }
 
 /* Certificate Preview */
 
-.certificate-preview {
-    position: absolute;
+.certificate-preview{
+    position:absolute;
+    top:82px;
+    left: -20px;
 
-    left: 0;
-    top: 60px;
+    width:435px;
+    height:300px;
 
-    width: 435px;
-    height: 365px;
-
-    object-fit: contain;
-
-    background: white;
-
-    border: none;
+    object-fit:contain;
 }
 
 /* Links */
 
-.certificate-links {
-    position: absolute;
+.certificate-links{
+    position:absolute;
 
-    right: 35px;
-    top: 175px;
+    top:150px;
+    right:85px;
 
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
+    display:flex;
+    flex-direction:column;
 }
 
-.certificate-links a {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.certificate-links a{
+    display:flex;
+    align-items:center;
+    gap:15px;
 
-    width: 270px;
+    text-decoration:none;
+    color:black;
 
-    text-decoration: none;
-
-    font-family: "Pixelify Sans", sans-serif;
-    font-size: 16px;
-
-    color: black;
+    font-family:"Pixelify Sans";
+    font-size:20px;
 }
 
-.certificate-links img {
-    width: 46px;
-    height: 46px;
+.certificate-links img{
+    width:72px;
+    height:72px;
+    position: relative;
+    left:230px;
 
-    image-rendering: pixelated;
 }
 
 .certificate-links span {
     transition: .2s;
 }
 
+.certificate-link span{
+    text-decoration: underline; 
+}
 
 /* ==========================================
    RESPONSIVE

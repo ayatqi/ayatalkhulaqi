@@ -89,7 +89,7 @@ function createCertificateCard(certificate) {
 
                 <div class="certificate-links">
 
-                    <a href="${certificate.link}" target="_blank">
+                    <a href="${certificate.link}" target="_blank" class="certificate-link">
 
                         <img
                             src="assets/icons/newpage-icon.png"
