@@ -31,6 +31,13 @@ async function loadComponent(
         initializeCertificates();
     }
 
+    if (
+        containerId === "projects-container" &&
+        typeof initializeProjects === "function"
+    ) {
+        initializeProjects();
+    }
+
 }
 
 loadComponent(
@@ -72,4 +79,10 @@ loadComponent(
 loadComponent(
     "cretifications-container",
     "components/Certifications.html"
+);
+
+
+loadComponent(
+    "projects-container",
+    "components/Projects.html"
 );

@@ -1,0 +1,393 @@
+/* ==========================================
+   PROJECTS SECTION
+========================================== */
+
+.projects{
+    position:relative;
+
+    min-height:100vh;
+
+    overflow:hidden;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* ==========================================
+   BACKGROUND
+========================================== */
+
+.projects__background{
+
+    position:absolute;
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    opacity:.3;
+
+    z-index:-2;
+
+}
+
+
+
+/* ==========================================
+   SLIDER
+========================================== */
+
+.projects-slider{
+
+    position:relative;
+
+    width:100%;
+
+    height:400px;
+
+}
+
+/* ==========================================
+   PROJECT POSITIONS
+========================================== */
+
+.project-slide{
+
+    position:absolute;
+
+    width:760px;
+    height:520px;
+
+    transition:
+        transform 1.5s ease,
+        opacity 1.5s ease;
+
+}
+
+/* Center Folder */
+
+.project-slide.active{
+
+    top:130px;
+    right:-260px;
+    transform:
+        translate(-50%,-50%)
+        scale(1);
+
+    opacity:1;
+
+    z-index:5;
+
+}
+
+/* Top Right Folder */
+
+.project-slide.next{
+
+    top:130px;
+    right:-260px;
+
+    transform:
+        rotate(12deg)
+        scale(.88);
+
+    opacity:0.5;
+
+    z-index:2;
+
+}
+
+/* Bottom Left Folder */
+
+.project-slide.previous{
+
+    bottom:-100px;
+    left:-260px;
+
+    transform:
+        rotate(-12deg)
+        scale(.88);
+
+    opacity:0.5;
+
+    z-index:2;
+
+}
+
+/* ==========================================
+   FOLDER
+========================================== */
+
+.project-folder{
+
+    position:absolute;
+
+    width:560px;
+    height:120px;
+
+    left:45%;
+
+    transform-origin:center;
+
+    transition:
+        transform 2.2s ease,
+        opacity 2.2s ease;
+
+}
+
+/* Current */
+
+.project-folder.center{
+
+    transform:
+        translate(-50%,-50%)
+        rotate(0deg)
+        scale(1);
+
+    opacity:1;
+    z-index:5;
+
+}
+
+/* Next */
+
+.project-folder.top{
+
+    transform:
+        translate(-8%,-450%)
+        rotate(18deg)
+        scale(.82);
+
+    opacity:.45;
+    z-index:2;
+
+}
+
+/* Previous */
+
+.project-folder.bottom{
+
+    transform:
+        translate(-10%,450%)
+        rotate(18deg)
+        scale(.82);
+
+    opacity:.45;
+    z-index:2;
+
+}
+
+.project-folder__image{
+    height: 500px;
+    width: 700px;
+}
+
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.project-content{
+
+    position:absolute;
+
+    inset:0;
+
+}
+
+/* ==========================================
+   TITLE
+========================================== */
+
+.project-name{
+
+    position:absolute;
+
+    top:10px;
+    left:40px;
+
+    width:670px;
+
+    font-family:"Pixelify Sans",sans-serif;
+
+    font-size:28px;
+
+    color:#222;
+
+}
+
+/* ==========================================
+   GRID
+========================================== */
+
+.project-grid{
+
+    position:absolute;
+
+    top:100px;
+    left:40px;
+
+    width:500px;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    grid-template-rows:auto auto;
+
+    column-gap:35px;
+
+    row-gap:45px;
+
+}
+
+/* ==========================================
+   DESCRIPTION
+========================================== */
+
+.project-description{
+
+
+    font-size:14px;
+    width: 350px;
+
+    line-height:1.45;
+
+    color:#222;
+
+}
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+.project-preview{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.project-preview img{
+
+    width:260px;
+
+    max-height:190px;
+
+    object-fit:contain;
+
+}
+
+/* ==========================================
+   SKILLS
+========================================== */
+
+.project-skills{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    align-items:center;
+
+}
+
+.project-skills img{
+
+    width:48px;
+    height:48px;
+
+    image-rendering:pixelated;
+
+    transition:.25s;
+
+}
+
+.project-skills img:hover{
+
+    animation:bounce .5s ease;
+
+}
+
+/* ==========================================
+   GITHUB
+========================================== */
+
+.project-github{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    text-decoration:none;
+
+    color:#111;
+
+    font-family:"Pixelify Sans",sans-serif;
+
+    font-size:14px;
+
+}
+
+.project-github img{
+
+    width:30px;
+    height:30px;
+
+}
+
+.project-github:hover {
+    text-decoration:underline;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width:1500px){
+
+    .project-slide{
+
+        transform-origin:center;
+
+    }
+
+    .project-slide.active{
+
+        transform:
+            translate(-50%,-50%)
+            scale(.85);
+
+    }
+
+}
+
+@media (max-width:1200px){
+
+    .project-slide.active{
+
+        transform:
+            translate(-50%,-50%)
+            scale(.72);
+
+    }
+
+    .project-slide.next,
+    .project-slide.previous{
+
+        display:none;
+
+    }
+
+}
+

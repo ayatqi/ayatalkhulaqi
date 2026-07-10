@@ -17,7 +17,10 @@ button,
 .job__icon,
 .languages-header__icon,
 .skills-header__icon,
-.system-message__close img{
+.system-message__close img,
+.project-github img,
+.project-github span,
+.project-skills {
     cursor: url("../assets/cursors/pointer.cur"), pointer;
 }
 
@@ -41,7 +44,9 @@ button,
 .languages-header__icon:hover,
 .education-icon:hover,
 .certificate-links a:hover img,
-.certificate-links a:hover span {
+.certificate-links a:hover span,
+.project-github:hover img,
+.project-github:hover span {
     animation: bounce 0.5s ease;
 }
 

@@ -41,7 +41,7 @@
 
     position:absolute;
 
-    width:95px;
+    width:120px;
 
     display:flex;
     flex-direction:column;
@@ -84,37 +84,43 @@
 .icon-documents{
 
     top:60px;
-    left:35px;
+    left:10px;
 }
 
 .icon-computer{
 
     top:160px;
-    left:35px;
+    left:10px;
 }
 
 .icon-chrome{
 
     top:260px;
-    left:35px;
+    left:10px;
 }
 
 /* Left Second col */
 .icon-recycle{
 
     top:60px;
-    left:135px;
+    left:110px;
 }
 
 .icon-ie{
 
     top:160px;
-    left:135px;
+    left:110px;
 }
 .icon-firefox{
 
     top:260px;
-    left:135px;
+    left:110px;
+}
+
+/* Left Third col */
+.icon-cretifications{
+    top:60px;
+    left:230px;
 }
 
 
