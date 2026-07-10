@@ -40,8 +40,7 @@ const projects = [
         name: "Image Classification",
 
         description:
-            "<b>Image Classification of 100 sports</b> <br><br> Hundred sports image classification using convolutional neural networks and transfer learning. Training and testing the models with Adam and RMSprop optimizers, a number of 64 and 128 batches and for transfer learning three different architecture models were used. The three architecture models are MobileNetV2, VGG19 and ResNet101V2. Transfer Learning had way better accuracy and loss results than conventional neural networks. However in transfer learning ResNet101V2 had the highest accuracy rate at 94.19% with batch number 64 and MobileNetV2 had the lowest loss rate at 18.99% with batch number 128 both using Adam optimizers.",
-
+            "<b>Image Classification of 100 sports</b> <br><br> Hundred sports image classification using convolutional neural networks and transfer learning. Training and testing the models with Adam and RMSprop optimizers, a number of 64 and 128 batches and for transfer learning three different architecture models were used. The three architecture models are MobileNetV2, VGG19 and ResNet101V2.",
         image: "assets/projects/img_cls_sport.png",
 
         github: "https://github.com/ayatqi/Image-Classification-of-100-sports",
@@ -56,7 +55,7 @@ const projects = [
 
         description:
             "<b>CO2 Emission Tableau</b> <br><br> Comprehensive analysis of global CO2 and other greenhouse gasses (GHG) emissions reveals critical insights into the historical trends, sector-specific contributions, and the effectiveness of policies aimed at mitigating climate change. This report synthesizes data spanning multiple decades and sectors to provide a nuanced understanding of the drivers and implications of GHG emissions.",
-        image: "assets/projects/blinkit_sales.png",
+        image: "assets/projects/co2_analysis.png",
 
         github: "https://github.com/ayatqi/Co2-Emission-Tableau",
 
