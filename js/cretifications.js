@@ -5,6 +5,14 @@
 const certificates = [
 
     {
+        title: "SAP Certified - End-to-End Business Processes for SAP Business Suite",
+        image: "assets/certificates/SAP_Certified_Implementation_Consultant_E2E.png",
+
+        link: "https://www.credly.com/badges/06b682c7-f40d-4be6-a850-89682fc87a38/public_url",
+        view: "../assets/docs/SAP_Certified_Implementation_Consultant_E2E.pdf"
+    },
+
+    {
         title: "SAP Certified - SAP Generative AI Developer",
         image: "assets/certificates/SAP_Certified_Generative_AI_Developer.png",
 
