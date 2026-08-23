@@ -6,7 +6,7 @@ const certificates = [
     {
         title: "Rewrite AI: Summer Challenge",
         image: "assets/certificates/Rewrite_AI_Summer_Challenge_Certificate.png",
-        link:"https://skills.yourlearning.ibm.com/activity/PLAN-B5D1D9C11999",
+        link:"#",
         view: "../assets/docs/Rewrite_AI_Summer_Challenge_Certificate.pdf"
     },
 
