@@ -5,7 +5,13 @@
 const certificates = [
 
     {
-        title: "SAP Certified - End-to-End Business Processes for SAP Business Suite",
+        title: "SAP Young Professionals Program",
+        image: "assets/certificates/YPP_SAP_Certificate.png",
+
+        view: "../assets/docs/YPP_SAP_Certificate.pdf"
+    },
+    {
+        title: "End-to-End Business Processes for SAP Business Suite",
         image: "assets/certificates/SAP_Certified_Implementation_Consultant_E2E.png",
 
         link: "https://www.credly.com/badges/06b682c7-f40d-4be6-a850-89682fc87a38/public_url",
@@ -13,7 +19,7 @@ const certificates = [
     },
 
     {
-        title: "SAP Certified - SAP Generative AI Developer",
+        title: "SAP Generative AI Developer",
         image: "assets/certificates/SAP_Certified_Generative_AI_Developer.png",
 
         link: "https://www.credly.com/badges/35c088f6-37c2-425e-90c4-809f6d3f23c1/public_url",
@@ -21,7 +27,7 @@ const certificates = [
     },
 
     {
-        title: "Microsoft Data Modeling in Power BI",
+        title: "Data Modeling in Power BI",
         image: "assets/certificates/Microsoft_Data_Modeling_in_Power_BI_Certificate.png",
 
         link: "https://www.coursera.org/account/accomplishments/verify/G3SQMQU2EQFK",
@@ -29,7 +35,7 @@ const certificates = [
     },
 
     {
-        title: "Microsoft Extract Transform and Load Data in Power BI",
+        title: "Extract Transform and Load Data in Power BI",
         image: "assets/certificates/Microsoft_Extract_Transform_and_Load_Data_in_Power_BI.png",
 
         link: "https://www.coursera.org/account/accomplishments/verify/PWZZ2MQ8D5KH",
@@ -37,7 +43,7 @@ const certificates = [
     },
 
     {
-        title: "Microsoft Harnessing the Power of Data with Power BI",
+        title: "Harnessing the Power of Data with Power BI",
         image: "assets/certificates/Microsoft_Harnessing_the_Power_of_Data_with_Power_BI.png",
 
         link: "https://www.coursera.org/account/accomplishments/verify/0BNUYLEVXG1Q",
@@ -45,7 +51,7 @@ const certificates = [
     },
 
     {
-        title: "Microsoft Preparing Data for Analysis with Microsoft Excel",
+        title: "Preparing Data for Analysis with Microsoft Excel",
         image: "assets/certificates/Microsoft_Preparing_Data_for_Analysis_with_Microsoft_Excel_Certificate.jpeg",
 
         link: "https://www.coursera.org/account/accomplishments/verify/4YE8ZZB16H49",
