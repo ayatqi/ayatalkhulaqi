@@ -200,6 +200,8 @@
 
 .certificate-title{
     position:absolute;
+
+    top:15px;
     left:18px;
     right:18px;
 
