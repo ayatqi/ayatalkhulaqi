@@ -45,6 +45,19 @@ loadComponent(
     "components/Header.html"
 ).then(() => {
 
+    // Initialize mobile menu
+
+    if (
+        typeof initializeMobileMenu === "function"
+    ) {
+
+        initializeMobileMenu();
+
+    }
+
+
+    // Certifications navigation
+
     const certificatesBtn =
         document.getElementById("certificates-nav");
 
@@ -55,7 +68,9 @@ loadComponent(
             setTimeout(() => {
 
                 if (window.restartCertificatesSlider) {
+
                     window.restartCertificatesSlider();
+
                 }
 
             }, 100);

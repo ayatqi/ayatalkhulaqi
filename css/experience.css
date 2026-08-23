@@ -291,3 +291,152 @@
     width: 80px !important;
     height: 80px !important;
 }
+
+/* ======================
+   MOBILE RESPONSIVE
+====================== */
+
+@media screen and (max-width: 600px) {
+
+    .experience {
+        height: auto;
+        padding: 32px 16px;
+    }
+
+    .experience::before {
+        background-size: 90%;
+    }
+
+    .experience__content {
+        min-height: auto;
+    }
+
+    .experience__title {
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    /* Experience Window */
+    .experience-window {
+        position: relative;
+        width: 100%;
+        right: 0;
+        margin-bottom: 24px;
+    }
+
+    .experience-window .window-bg {
+        width: 100%;
+    }
+
+    .window-content {
+        position: absolute;
+        top: 45px;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+
+        width: 80%;
+        height: 60%;
+        overflow-y: auto;
+    }
+
+    /* Education Window */
+    .education-window {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .education-content{
+        top: 45px;
+        width: 80%;
+        height: 60%;
+    } 
+
+    /* Skills Window */
+    .skills-window {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .skills-window .window-bg {
+        width: 100%;
+    }
+
+    /* Resume Message */
+    #resumeMessage {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    #resumeMessage span{
+
+        font-size: 24px;
+    }
+    /* Text Scaling */
+    .job__title {
+        font-size: 16px;
+    }
+
+    .job__company {
+        margin-left: 48px;
+        font-size: 14px;
+    }
+
+    .job__date {
+        font-size: 12px;
+    }
+
+    .job__details {
+        margin-left: 40px;
+    }
+
+    .job__details li {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .skills-header h3,
+    .languages-header h3 {
+        font-size: 22px;
+    }
+
+    .skills-header__icon,
+    .languages-header__icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .skills-list li,
+    .languages-list li {
+        font-size: 14px;
+    }
+
+    .education-school {
+        font-size: 14px;
+    }
+
+    .education-degree,
+    .education-cgpa {
+        font-size: 13px;
+    }
+
+    .resume-icon {
+        width: 70px !important;
+        height: 70px !important;
+    }
+
+    #closeBtn {
+    top: 8px;
+    width: 25px;
+    height: 25px;
+    }
+
+}

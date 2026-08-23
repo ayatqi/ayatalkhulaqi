@@ -43,7 +43,7 @@
 .projects-slider{
 
     position:relative;
-
+    top: 200px;
     width:100%;
 
     height:400px;
@@ -125,8 +125,8 @@
 
     position:absolute;
 
-    width:560px;
-    height:120px;
+    width:800px;
+    height:530px;
 
     left:45%;
 
@@ -181,8 +181,20 @@
 }
 
 .project-folder__image{
-    height: 530px;
-    width: 800px;
+
+    display:block;
+
+    width:800px;
+    height:530px;
+
+    max-width:none;
+    max-height:none;
+
+    object-fit:fill;
+
+    user-select:none;
+    pointer-events:none;
+
 }
 
 
@@ -276,6 +288,7 @@
 
 .project-preview img{
 
+    max-width: none; 
     width:350px;
 
     max-height:250px;
@@ -386,6 +399,349 @@
     .project-slide.previous{
 
         display:none;
+
+    }
+
+}
+
+
+@media (max-width: 600px){
+
+    /* ======================================
+       PROJECT SECTION
+    ====================================== */
+
+    .projects{
+
+        min-height:100vh;
+        width:100%;
+
+        overflow:hidden;
+
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+    }
+
+
+    /* ======================================
+       BACKGROUND
+    ====================================== */
+
+    .projects__background{
+
+        width:100%;
+        height:100%;
+
+        object-fit:cover;
+
+        opacity:.3;
+
+    }
+
+
+    /* ======================================
+       SLIDER
+    ====================================== */
+
+    .projects-slider{
+
+        position:relative;
+
+        top:-100px;
+
+        width:100%;
+        height:600px;
+
+    }
+
+
+    /* ======================================
+       PROJECT SLIDES
+    ====================================== */
+
+    .project-slide{
+
+        width:100%;
+        height:600px;
+
+        left:0;
+        right:auto;
+
+    }
+
+
+    /* Hide moving folders */
+
+    .project-slide.next,
+    .project-slide.previous{
+
+        display:none;
+
+    }
+
+
+    /* ======================================
+       ACTIVE SLIDE
+    ====================================== */
+
+    .project-slide.active{
+
+        position:absolute;
+
+        top:50%;
+        left:50%;
+
+        right:auto;
+        bottom:auto;
+
+        width:100%;
+
+        transform:
+            translate(-50%,-50%)
+            scale(.43);
+
+        opacity:1;
+
+        z-index:5;
+
+    }
+
+
+    /* ======================================
+       FOLDER
+    ====================================== */
+
+    .project-folder{
+
+        position:absolute;
+
+        width:560px;
+        height:120px;
+
+        left:50%;
+        top:50%;
+
+        transform-origin:center;
+
+    }
+
+
+    /* ======================================
+       CENTER FOLDER
+    ====================================== */
+
+    .project-folder.center{
+
+        transform:
+            translate(-50%,-50%)
+            rotate(0deg)
+            scale(.75);
+
+        opacity:1;
+
+        z-index:5;
+
+    }
+
+
+    /* Hide other folders */
+
+    .project-folder.top,
+    .project-folder.bottom{
+
+        opacity:0;
+
+        pointer-events:none;
+
+    }
+
+
+    /* ======================================
+       FOLDER IMAGE
+    ====================================== */
+
+    .project-folder__image{
+
+        width:800px;
+        height:530px;
+
+        max-width:none;
+
+        display:block;
+
+    }
+
+
+    /* ======================================
+       CONTENT
+    ====================================== */
+
+    .project-content{
+
+        position:absolute;
+
+        inset:0;
+
+        width:800px;
+        height:530px;
+
+    }
+
+
+    /* ======================================
+       TITLE
+    ====================================== */
+
+    .project-name{
+
+        top:10px;
+        left:40px;
+
+        width:670px;
+
+        font-size:32px;
+
+    }
+
+
+    /* ======================================
+       PROJECT GRID
+       
+       MOBILE:
+       ROW 1 = DESCRIPTION
+       ROW 2 = SKILLS + GITHUB
+    ====================================== */
+
+    .project-grid{
+
+        position:absolute;
+
+        top:100px;
+        left:40px;
+
+        width:500px;
+
+        display:grid;
+
+        grid-template-columns:1fr 1fr;
+
+        grid-template-rows:auto auto;
+
+        column-gap:25px;
+
+        row-gap:35px;
+
+    }
+
+
+    /* ======================================
+       DESCRIPTION
+       
+       ROW 1
+    ====================================== */
+
+    .project-description{
+
+        grid-column:1 / 3;
+
+        grid-row:1;
+
+        width:530px;
+
+        font-size:21px;
+
+        line-height:1.5;
+
+        text-align:left;
+
+    }
+
+
+    /* ======================================
+       HIDE PROJECT PREVIEW IMAGE
+    ====================================== */
+
+    .project-preview{
+
+        display:none;
+
+    }
+
+
+    /* ======================================
+       SKILLS
+       
+       ROW 2 - LEFT
+    ====================================== */
+
+    .project-skills{
+
+        grid-column:1;
+
+        grid-row:2;
+
+        width:230px;
+
+        display:flex;
+
+        flex-wrap:wrap;
+
+        align-items:center;
+
+        justify-content:flex-start;
+
+        gap:12px;
+
+    }
+
+
+    .project-skills img{
+
+        width:42px;
+        height:42px;
+
+        image-rendering:pixelated;
+
+    }
+
+
+    /* ======================================
+       GITHUB
+       
+       ROW 2 - RIGHT
+    ====================================== */
+
+    .project-github{
+
+        grid-column:2;
+
+        grid-row:2;
+
+        display:flex;
+
+        align-items:center;
+
+        justify-content:flex-start;
+
+        gap:10px;
+
+        width:220px;
+
+        font-size:18px;
+
+        text-align:left;
+
+    }
+
+
+    .project-github img{
+
+        width:42px;
+        height:42px;
+
+        flex-shrink:0;
 
     }
 
