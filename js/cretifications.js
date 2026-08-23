@@ -3,11 +3,31 @@
 // =========================================
 
 const certificates = [
+    {
+        title: "Rewrite AI: Summer Challenge",
+        image: "assets/certificates/Rewrite_AI_Summer_Challenge_Certificate.png",
+        link:"https://skills.yourlearning.ibm.com/activity/PLAN-B5D1D9C11999",
+        view: "../assets/docs/Rewrite_AI_Summer_Challenge_Certificate.pdf"
+    },
+
+    {
+        title: "Build an AI Agent",
+        image: "assets/certificates/IBM_Build_an_AI_Agent.png",
+        link: "https://www.credly.com/badges/95101945-7360-4af2-b811-a8d2200b901a/public_url",
+        view: "../assets/docs/IBM_Build_an_AI_Agent.pdf"
+    },
+
+    {
+        title: "AI Fundamentals: Foundations for Understanding AI",
+        image: "assets/certificates/IBM_AI_Fundamentals_Foundations_for_Understanding_AI.png",
+        link: "https://www.credly.com/badges/bd450f55-e202-459d-a179-fc4ca0c85b08/public_url",
+        view: "../assets/docs/IBM_AI_Fundamentals_Foundations_for_Understanding_AI.pdf"
+    },
 
     {
         title: "SAP Young Professionals Program",
         image: "assets/certificates/YPP_SAP_Certificate.png",
-
+        link: "#",
         view: "../assets/docs/YPP_SAP_Certificate.pdf"
     },
     
