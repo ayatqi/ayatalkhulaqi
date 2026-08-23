@@ -125,7 +125,7 @@ function createProject(project){
         <div class="project-folder">
 
             <img
-                src="../assets/img/folder.png"
+                src="assets/img/folder.png"
                 class="project-folder__image"
                 alt=""
             >

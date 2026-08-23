@@ -21,23 +21,22 @@ button,
 .project-github img,
 .project-github span,
 .project-skills {
-    cursor: url("../assets/cursors/pointer.cur"), pointer;
+    cursor: url("assets/cursors/pointer.cur"), pointer;
 }
 
 /* FONT IMPORTS */
 
 @font-face {
     font-family: "Super Pixel";
-    src: url("../fonts/SuperPixel-m2L8j.ttf") format("truetype");
+    src: url("fonts/SuperPixel-m2L8j.ttf") format("truetype");
     font-display: swap;
 }
 
 @font-face {
     font-family: "Gome Pixel";
-    src: url("../fonts/GomePixel-ARJd7.otf") format("opentype");
+    src: url("fonts/GomePixel-ARJd7.otf") format("opentype");
     font-display: swap;
 }
-
 
 .job__icon:hover,
 .skills-header__icon:hover,
