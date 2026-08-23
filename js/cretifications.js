@@ -10,6 +10,7 @@ const certificates = [
 
         view: "../assets/docs/YPP_SAP_Certificate.pdf"
     },
+    
     {
         title: "End-to-End Business Processes for SAP Business Suite",
         image: "assets/certificates/SAP_Certified_Implementation_Consultant_E2E.png",
